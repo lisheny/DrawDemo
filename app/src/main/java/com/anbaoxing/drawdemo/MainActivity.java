@@ -29,10 +29,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_ccchart:
-                Intent intent = new Intent(MainActivity.this, CurveChartActivity.class);
-                startActivity(intent);
+                Intent gotoCurveChartAty = new Intent(MainActivity.this, CurveChartActivity.class);
+                startActivity(gotoCurveChartAty);
                 break;
             case R.id.btn_bcchart:
+                Intent gotoBarChartAty = new Intent(MainActivity.this, BarChartActivity.class);
+                startActivity(gotoBarChartAty);
                 break;
             default:
                 break;
